@@ -13,6 +13,6 @@ app.use(express.json())
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
 
-app.listen(process.env.port || 7700, () => {
+app.listen(process.env.PORT || 7700, () => {
     console.log(`You are connected!!`);
 })
